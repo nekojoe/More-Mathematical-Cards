@@ -2,8 +2,5 @@ name: More Mathematical Cards
 description: More Mathematical Cards
 creator: nekojoe
 version: 1.0.0
-enabled: false
 exports:
 - cards
-# - decks
-# - patches
