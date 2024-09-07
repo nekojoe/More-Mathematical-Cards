@@ -1,0 +1,5 @@
+Patch:
+  path: 'ChoiceUI.gd'
+  pattern: 'starting_deck_string = "birthday"'
+  payload: ['# aw nah our multiline patches', '# are scuffed asf :o']
+  position: 'after'

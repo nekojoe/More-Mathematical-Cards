@@ -1,0 +1,17 @@
+if len(other_player.play_pile) > 0:
+    var random = RandomNumberGenerator.new()
+    random.randomize()
+    var chance = random.randi() % 2
+    random.randomize()
+    var _card = other_player.play_pile[random.randi() % len(other_player.play_pile)]
+
+    if chance == 0:
+        _card.set_card_value(_card.get_card_value() + 1)
+    else:
+        _card.set_card_value(_card.get_card_value() - 1)
+
+    other_player.get_parent().update_scores()
+else:
+    card.show_no_target_error()
+
+

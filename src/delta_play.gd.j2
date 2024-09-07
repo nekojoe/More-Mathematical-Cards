@@ -1,0 +1,4 @@
+var delta =  abs(current_player.score - other_player.score)
+card.set_card_value(delta)
+current_player.get_parent().update_scores()
+card.card_does_burn = true

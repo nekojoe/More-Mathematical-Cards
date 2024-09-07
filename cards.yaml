@@ -1,0 +1,329 @@
+# e cards
+
+e of Spades:
+  Description: "{start_trigger}On play:{end_trigger} set value to 2.\\n{start_trigger}On stand:{end_trigger} {keyword_rounds_up}."
+  Image: e_of_spades.png
+  Foil: foil_e_of_spades.png
+  Value: 2
+  Suit: spades 
+  Triggers:
+   Play: e_of_suit_play.gd.j2
+   Stand: round_up.gd.j2
+  Keywords:
+    - ROUNDS_UP
+  Identifier: nekojoe_e_of_spades
+
+e of Clubs:
+  Description: "{start_trigger}On play:{end_trigger} set value to 2.\\n{start_trigger}On stand:{end_trigger} {keyword_rounds_up}."
+  Image: e_of_clubs.png
+  Foil: foil_e_of_clubs.png
+  Value: 2
+  Suit: clubs
+  Triggers:
+   Play: e_of_suit_play.gd.j2
+   Stand: round_up.gd.j2
+  Keywords:
+    - ROUNDS_UP
+  Identifier: nekojoe_e_of_clubs
+
+e of Diamonds:
+  Description: "{start_trigger}On play:{end_trigger} set value to 2.\\n{start_trigger}On stand:{end_trigger} {keyword_rounds_up}."
+  Image: e_of_diamonds.png
+  Foil: foil_e_of_diamonds.png
+  Value: 2
+  Suit: diamonds 
+  Triggers:
+   Play: e_of_suit_play.gd.j2
+   Stand: round_up.gd.j2
+  Keywords:
+    - ROUNDS_UP
+  Identifier: nekojoe_e_of_diamonds
+
+e of Hearts:
+  Description: "{start_trigger}On play:{end_trigger} set value to 2.\\n{start_trigger}On stand:{end_trigger} {keyword_rounds_up}."
+  Image: e_of_hearts.png
+  Foil: foil_e_of_hearts.png
+  Value: 2
+  Suit: hearts'
+  Triggers:
+    Play: e_of_suit_play.gd.j2
+    Stand: round_up.gd.j2
+  Keywords:
+    - ROUNDS_UP
+  Identifier: nekojoe_e_of_hearts
+
+# +- cards
+
++- of Spades:  
+  Description: "{keyword_flexible}: (10 or -10)."  
+  Image: +-_of_spades.png  
+  Foil: foil_+-_of_spades.png
+  Value: 10
+  Suit: spades
+  Flexible: [10, -10]
+  Keywords:  
+    - FLEXIBLE
+  Identifier: nekojoe_+-_of_spades
+
++- of Clubs:  
+  Description: "{keyword_flexible}: (10 or -10)."  
+  Image: +-_of_clubs.png  
+  Foil: foil_+-_of_clubs.png
+  Value: 10
+  Suit: clubs
+  Flexible: [10, -10]
+  Keywords:  
+    - FLEXIBLE
+  Identifier: nekojoe_+-_of_clubs
+
++- of Diamonds:  
+  Description: "{keyword_flexible}: (10 or -10)."  
+  Image: +-_of_diamonds.png  
+  Foil: foil_+-_of_diamonds.png
+  Value: 10
+  Suit: diamonds
+  Flexible: [10, -10]
+  Keywords:  
+    - FLEXIBLE
+  Identifier: nekojoe_+-_of_diamonds
+
++- of Hearts:  
+  Description: "{keyword_flexible}: (10 or -10)."  
+  Image: +-_of_hearts.png  
+  Foil: foil_+-_of_hearts.png
+  Value: 10
+  Suit: hearts
+  Flexible: [10, -10]
+  Keywords:  
+    - FLEXIBLE
+  Identifier: nekojoe_+-_of_hearts
+
+# set cards
+
+Set of Spades:
+  Description: "{start_trigger}On play:{end_trigger} set value equal to number of cards in play with same suit."
+  Image: set_of_spades.png
+  Foil: foil_set_of_spades.png
+  Value: 0
+  Suit: spades
+  Triggers:
+    Play: set_of_suit_play.gd.j2
+  Identifier: nekojoe_set_of_spades
+
+Set of Clubs:
+  Description: "{start_trigger}On play:{end_trigger} set value equal to number of cards in play with same suit."
+  Image: set_of_clubs.png
+  Foil: foil_set_of_clubs.png
+  Value: 0
+  Suit: clubs
+  Triggers:
+    Play: set_of_suit_play.gd.j2
+  Identifier: nekojoe_set_of_clubs
+
+Set of Diamonds:
+  Description: "{start_trigger}On play:{end_trigger} set value equal to number of cards in play with same suit."
+  Image: set_of_diamonds.png
+  Foil: foil_set_of_diamonds.png
+  Value: 0
+  Suit: diamonds
+  Triggers:
+    Play: set_of_suit_play.gd.j2
+  Identifier: nekojoe_set_of_diamonds
+
+Set of Hearts:
+  Description: "{start_trigger}On play:{end_trigger} set value equal to number of cards in play with same suit."
+  Image: set_of_hearts.png
+  Foil: foil_set_of_hearts.png
+  Value: 0
+  Suit: hearts
+  Triggers:
+    Play: set_of_suit_play.gd.j2
+  Identifier: nekojoe_set_of_hearts
+
+# approximation cards
+
+Approximation of Spades:
+  Description: "{start_trigger}On play:{end_trigger} randomly increase or decrease value of one of opponent's cards by 1."
+  Image: approximation_of_spades.png
+  Foil: foil_approximation_of_spades.png
+  Value: 5
+  Suit: spades
+  Triggers:
+    Play: approximation_play.gd.j2
+  Identifier: nekojoe_approximation_of_spades
+
+Approximation of Clubs:
+  Description: "{start_trigger}On play:{end_trigger} randomly increase or decrease value of one of opponent's cards by 1."
+  Image: approximation_of_clubs.png
+  Foil: foil_approximation_of_clubs.png
+  Value: 5
+  Suit: clubs
+  Triggers:
+    Play: approximation_play.gd.j2
+  Identifier: nekojoe_approximation_of_clubs
+
+Approximation of Diamonds:
+  Description: "{start_trigger}On play:{end_trigger} randomly increase or decrease value of one of opponent's cards by 1."
+  Image: approximation_of_diamonds.png
+  Foil: foil_approximation_of_diamonds.png
+  Value: 5
+  Suit: diamonds
+  Triggers:
+    Play: approximation_play.gd.j2
+  Identifier: nekojoe_approximation_of_diamonds
+
+Approximation of Hearts:
+  Description: "{start_trigger}On play:{end_trigger} randomly increase or decrease value of one of opponent's cards by 1."
+  Image: approximation_of_hearts.png
+  Foil: foil_approximation_of_hearts.png
+  Value: 5
+  Suit: hearts
+  Triggers:
+    Play: approximation_play.gd.j2
+  Identifier: nekojoe_approximation_of_hearts
+
+# delta cards -- need rework
+
+Delta of Spades:
+  Description: "{start_trigger}On play:{end_trigger} set value to difference between your score and opponent's score\\n{start_trigger}On discard:{end_trigger} {keyword_burn}."
+  Image: delta_of_spades.png
+  Foil: foil_delta_of_spades.png
+  Value: 0
+  Suit: spades
+  Triggers:
+    Play: delta_play.gd.j2
+  Keywords:
+    - BURN_UPPER
+  Identifier: nekojoe_delta_of_spades
+
+Delta of Clubs:
+  Description: "{start_trigger}On play:{end_trigger} set value to difference between your score and opponent's score\\n{start_trigger}On discard:{end_trigger} {keyword_burn}."
+  Image: delta_of_clubs.png
+  Foil: foil_delta_of_clubs.png
+  Value: 0
+  Suit: clubs
+  Triggers:
+    Play: delta_play.gd.j2
+  Keywords:
+    - BURN
+  Identifier: nekojoe_delta_of_clubs
+
+Delta of Diamonds:
+  Description: "{start_trigger}On play:{end_trigger} set value to difference between your score and opponent's score\\n{start_trigger}On discard:{end_trigger} {keyword_burn}."
+  Image: delta_of_diamonds.png
+  Foil: foil_delta_of_diamonds.png
+  Value: 0
+  Suit: diamonds
+  Triggers:
+    Play: delta_play.gd.j2
+  Keywords:
+    - BURN
+  Identifier: nekojoe_delta_of_diamonds
+
+Delta of Hearts:
+  Description: "{start_trigger}On play:{end_trigger} set value to difference between your score and opponent's score\\n{start_trigger}On discard:{end_trigger} {keyword_burn}."
+  Image: delta_of_hearts.png
+  Foil: foil_delta_of_hearts.png
+  Value: 0
+  Suit: hearts
+  Triggers:
+    Play: delta_play.gd.j2
+  Keywords:
+    - BURN
+  Identifier: nekojoe_delta_of_hearts
+
+# infinity cards
+# perm round up infinitely
+
+# ratio cards
+
+Ratio of Spades:
+  Description: "{start_trigger}On play:{end_trigger} set value to ratio of cards in both draw piles."
+  Image: ratio_of_spades.png
+  Foil: foil_ratio_of_spades.png
+  Value: 0
+  Suit: spades
+  Triggers:
+    Play: ratio_play.gd.j2
+  Identifier: nekojoe_ratio_of_spades
+
+Ratio of Clubs:
+  Description: "{start_trigger}On play:{end_trigger} set value to ratio of cards in both draw piles."
+  Image: ratio_of_clubs.png
+  Foil: foil_ratio_of_clubs.png
+  Value: 0
+  Suit: clubs
+  Triggers:
+    Play: ratio_play.gd.j2
+  Identifier: nekojoe_ratio_of_clubs
+
+Ratio of Diamonds:
+  Description: "{start_trigger}On play:{end_trigger} set value to ratio of cards in both draw piles."
+  Image: ratio_of_diamonds.png
+  Foil: foil_ratio_of_diamonds.png
+  Value: 0
+  Suit: diamonds
+  Triggers:
+    Play: ratio_play.gd.j2
+  Identifier: nekojoe_ratio_of_diamonds
+
+Ratio of Hearts:
+  Description: "{start_trigger}On play:{end_trigger} set value to ratio of cards in both draw piles."
+  Image: ratio_of_hearts.png
+  Foil: foil_ratio_of_hearts.png
+  Value: 0
+  Suit: hearts
+  Triggers:
+    Play: ratio_play.gd.j2
+  Identifier: nekojoe_ratio_of_hearts
+
+# sine cards
+
+Sine of Spades:
+  Description: "{start_trigger}On hit and {keyword_exploit}:{end_trigger} changes card\\nvalue in the order 0, 1, 0, -1."
+  Image: sine_of_spades.png
+  Foil: foil_sine_of_spades.png
+  Value: 0
+  Suit: spades
+  Triggers:
+    Play: sine_play.gd.j2
+    Hit: sine_play.gd.j2
+    Click: sine_play.gd.j2
+  Identifier: nekojoe_sine_of_spades
+
+Sine of Clubs:
+  Description: "{start_trigger}On hit and {keyword_exploit}:{end_trigger} changes card\\nvalue in the order 0, 1, 0, -1."
+  Image: sine_of_clubs.png
+  Foil: foil_sine_of_clubs.png
+  Value: 0
+  Suit: clubs
+  Triggers:
+    Play: sine_play.gd.j2
+    Hit: sine_play.gd.j2
+    Click: sine_play.gd.j2
+  Identifier: nekojoe_sine_of_clubs
+
+Sine of Diamonds:
+  Description: "{start_trigger}On hit and {keyword_exploit}:{end_trigger} changes card\\nvalue in the order 0, 1, 0, -1."
+  Image: sine_of_diamonds.png
+  Foil: foil_sine_of_diamonds.png
+  Value: 0
+  Suit: diamonds
+  Triggers:
+    Play: sine_play.gd.j2
+    Hit: sine_play.gd.j2
+    Click: sine_play.gd.j2
+  Identifier: nekojoe_sine_of_diamonds
+
+Sine of Hearts:
+  Description: "{start_trigger}On hit and {keyword_exploit}:{end_trigger} changes card\\nvalue in the order 0, 1, 0, -1."
+  Image: sine_of_hearts.png
+  Foil: foil_sine_of_hearts.png
+  Value: 0
+  Suit: hearts
+  Triggers:
+    Play: sine_play.gd.j2
+    Hit: sine_play.gd.j2
+    Click: sine_play.gd.j2
+  Identifier: nekojoe_sine_of_hearts
+

@@ -1,0 +1,9 @@
+# nekojoe:
+#   type: "opponent"
+#   sprite: 1
+#   healthpoints: 2000
+#   deck: [001]
+#   "chip_reward": {{ chips }},
+#   "start_dialogue": "{{ start_dialogue }}",
+#   "end_dialogue": "{{ end_dialogue }}",
+#     },

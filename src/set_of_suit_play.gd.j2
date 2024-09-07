@@ -1,0 +1,15 @@
+var total = 0
+
+if len(current_player.play_pile) > 0:
+    for _card in current_player.play_pile:
+        if _card.card_suit == card.card_suit or _card.card_suit == 'all_suits_at_once':
+            total = total + 1
+
+if len(other_player.play_pile) > 0:
+    for _card in other_player.play_pile:
+        if _card.card_suit == card.card_suit or _card.card_suit == 'all_suits_at_once':
+            total = total + 1
+
+card.set_card_value(total)
+current_player.get_parent().update_scores()
+
