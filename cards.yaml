@@ -60,7 +60,7 @@ e of Hearts:
   Foil: foil_+-_of_spades.png
   Value: 10
   Suit: spades
-  Flexible: [10, -10]
+  Flexible: [-10, 10]
   Keywords:  
     - FLEXIBLE
   Identifier: nekojoe_+-_of_spades
@@ -71,7 +71,7 @@ e of Hearts:
   Foil: foil_+-_of_clubs.png
   Value: 10
   Suit: clubs
-  Flexible: [10, -10]
+  Flexible: [-10, 10]
   Keywords:  
     - FLEXIBLE
   Identifier: nekojoe_+-_of_clubs
@@ -82,7 +82,7 @@ e of Hearts:
   Foil: foil_+-_of_diamonds.png
   Value: 10
   Suit: diamonds
-  Flexible: [10, -10]
+  Flexible: [-10, 10]
   Keywords:  
     - FLEXIBLE
   Identifier: nekojoe_+-_of_diamonds
@@ -93,7 +93,7 @@ e of Hearts:
   Foil: foil_+-_of_hearts.png
   Value: 10
   Suit: hearts
-  Flexible: [10, -10]
+  Flexible: [-10, 10]
   Keywords:  
     - FLEXIBLE
   Identifier: nekojoe_+-_of_hearts
